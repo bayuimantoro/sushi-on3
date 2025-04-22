@@ -1,24 +1,36 @@
 <?php include('includes/header.php'); ?>
 
-<section class="page-section">
+<section class="page-section py-5">
     <div class="container">
-        <h1>Promo Terbaru</h1>
-        <p>Jangan lewatkan penawaran spesial dan diskon menarik setiap minggunya!</p>
-        <!-- Tambahkan daftar promo -->
-        <ul class="promo-list">
-            <li>
-                <h3>Diskon 20% untuk Semua Sushi Roll</h3>
-                <p>Berlaku hingga akhir bulan ini.</p>
-            </li>
-            <li>
-                <h3>Buy 1 Get 1 Free untuk Menu Ramen</h3>
-                <p>Setiap hari Senin hingga Jumat, pukul 14.00 - 17.00.</p>
-            </li>
-            <li>
-                <h3>Gratis Minuman untuk Pembelian di Atas Rp 100.000</h3>
-                <p>Hanya berlaku untuk dine-in.</p>
-            </li>
-        </ul>
+        <h1 class="mb-4">Promo Terbaru</h1>
+        <p class="mb-4">Jangan lewatkan penawaran spesial dan diskon menarik setiap minggunya!</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Diskon 20% untuk Semua Sushi Roll</h5>
+                        <p class="card-text">Berlaku hingga akhir bulan ini.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Buy 1 Get 1 Free untuk Menu Ramen</h5>
+                        <p class="card-text">Setiap hari Senin hingga Jumat, pukul 14.00 - 17.00.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Gratis Minuman untuk Pembelian di Atas Rp 100.000</h5>
+                        <p class="card-text">Hanya berlaku untuk dine-in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 <?php include('includes/footer.php'); ?>
