@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = ""; // atau password kamu jika ada
-$dbname = "SushiOn3";
+$password = "";
+$dbname = "sushion3";
 
 $conn = new mysqli($host, $user, $password, $dbname);
 

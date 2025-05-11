@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "sushi_db";
+    private $db_name = "sushion3";
     private $username = "root";
     private $password = "";
     public $conn;

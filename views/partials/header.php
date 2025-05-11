@@ -1,3 +1,9 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,6 +51,12 @@
             border-radius: 20px;
             padding: 8px 15px !important;
         }
+
+        .username-display {
+            margin-right: 10px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
     </style>
 </head>
 
@@ -60,15 +72,34 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.php?page=home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php?page=menu">Menu</a></li>
                     <a class="nav-link order-btn" href="index.php?page=order">Order</a>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=information">Information</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=locations">Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.php?page=contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="views/login.php">Login</a></li>
+
+                    <?php if (isset($_SESSION['username'])): ?>
+                        <li class="nav-item">
+                            <span class="nav-link username-display">Hi, <?= htmlspecialchars($_SESSION['username']) ?></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="confirmLogout(event)">Logout</a>
+                        </li>
+                    <?php else: ?>
+                        <li class="nav-item"><a class="nav-link" href="views/login.php">Login</a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <script>
+    function confirmLogout(event) {
+        event.preventDefault();
+        if (confirm("Apakah Anda yakin ingin logout?")) {
+            window.location.href = "views/logout.php";
+        }
+    }
+    </script>
+
     <main>

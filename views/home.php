@@ -10,7 +10,7 @@
 <!--promosi-->
 <section class="py-5 bg-dark text-white">
     <div class="container">
-        <h2 class="mb-4 text-center">Promosi Terakhir</h2>
+        <h2 class="mb-4 text-center">Kejutan Minggu Ini</h2>
         <div class="row g-4 justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm bg-dark text-white border-0">
@@ -18,8 +18,8 @@
                         <img src="assets/images/sushi_prom.jpg" class="card-img-top img-fluid promo-hover" alt="Promo 1">
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Penawaran Sushi Super</h5>
-                        <p class="card-text">Nikmati diskon hingga 50% untuk item tertentu.</p>
+                        <h5 class="card-title">Sushi Super</h5>
+                        <p class="card-text">Nikmati kembali Sushi yang super lezat.</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title">Top Ramen Mingguan</h5>
-                        <p class="card-text">Beli 1 Gratis 1 untuk semua hidangan ramen.</p>
+                        <p class="card-text">Favorit pelanggan kini kembali! Jangan lewatkan kenikmatan ramen pilihan chef kami.</p>
                     </div>
                 </div>
             </div>

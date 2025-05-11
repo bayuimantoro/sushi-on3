@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 class PageController {
     public function home() {

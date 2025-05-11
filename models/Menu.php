@@ -3,7 +3,7 @@ require_once 'Database.php';
 
 class Menu {
     private $conn;
-    private $table = "menus";
+    private $table = "menu";
 
     public function __construct() {
         $database = new Database();
